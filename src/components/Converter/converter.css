@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+.hero{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(45deg,#010758, #490d61);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+}
+.hero h1{
+    font-size: 45px;
+    font-weight: 500;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+.hero h1 span{
+    color: #ff2963;
+}
+textarea{
+    width: 600px;
+    height: 250px;
+    background: #403d84;
+    color: #fff;
+    font-size: 15px;
+    border: 0;
+    outline: 0;
+    padding: 20px;
+    border-radius: 10px;
+    resize: none;
+    margin-bottom: 30px;
+}
+textarea::placeholder{
+    font-size: 16px;
+    color: #ddd;
+}
+.row{
+    width: 600px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+button{
+    background: #ff2963;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 30px;
+    border-radius: 35px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+select{
+    flex: 1;
+    color: #fff;
+    background: #403d84;
+    height: 50px;
+    padding: 0 20px;
+    outline: 0;
+    border: 0;
+    border-radius: 35px;
+    appearance: none;
+}
+
+/* Добавлен медиа-запрос для мобильных устройств */
+@media only screen and (max-width: 600px) {
+    .hero h1 {
+        font-size: 30px; /* Уменьшен размер заголовка для мобильных устройств */
+        margin-top: 50px; /* Уменьшен верхний отступ для мобильных устройств */
+        margin-bottom: 25px; /* Уменьшен нижний отступ для мобильных устройств */
+    }
+
+    textarea {
+        width: 90%; /* Изменена ширина текстового поля для мобильных устройств */
+        height: 150px; /* Уменьшена высота текстового поля для мобильных устройств */
+        font-size: 14px; /* Уменьшен размер шрифта для мобильных устройств */
+        margin-bottom: 20px; /* Уменьшен нижний отступ для мобильных устройств */
+    }
+
+    .row {
+        width: 90%; /* Изменена ширина строки для мобильных устройств */
+        gap: 10px; /* Уменьшен зазор между элементами для мобильных устройств */
+    }
+
+    button {
+        font-size: 14px; /* Уменьшен размер шрифта кнопки для мобильных устройств */
+        padding: 8px 20px; /* Уменьшены отступы кнопки для мобильных устройств */
+    }
+
+    select {
+        height: 40px; /* Уменьшена высота выпадающего списка для мобильных устройств */
+    }
+}
